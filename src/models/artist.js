@@ -4,5 +4,4 @@ var Artist = BaseModel.extend({
     }
 });
 
-global.Artist = Artist;
 module.exports = Artist;

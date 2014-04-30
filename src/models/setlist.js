@@ -7,5 +7,4 @@ var Setlist = BaseModel.extend({
     }
 });
 
-global.Setlist = Setlist;
 module.exports = Setlist;

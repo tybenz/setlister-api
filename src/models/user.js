@@ -4,5 +4,4 @@ var User = BaseModel.extend({
     }
 });
 
-global.User = User;
 module.exports = User;

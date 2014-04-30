@@ -7,5 +7,4 @@ var Group = BaseModel.extend({
     }
 });
 
-global.Group = Group;
 module.exports = Group;

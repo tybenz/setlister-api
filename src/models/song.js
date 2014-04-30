@@ -7,5 +7,4 @@ var Song = BaseModel.extend({
     }
 });
 
-global.Song = Song;
 module.exports = Song;

@@ -55,5 +55,4 @@ function getStack() {
     return stack;
 }
 
-global.BaseModel = BaseModel;
 module.exports = BaseModel;

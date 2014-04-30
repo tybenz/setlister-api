@@ -1,26 +1,22 @@
-var passwordHash = require( 'password-hash' );
+var _ = require( 'lodash-node' );
 
 var UsersController = {
     index: function( params ) {
         var users = new Users();
-        return { result: users.fetch() }
+        return { result: users.fetch( { withRelated: [ 'groups' ] } ) };
     },
 
     show: function( params ) {
-        var user = new Users( { id: params.id } );
-        return { result: user.fetch() };
+        var user = new User( { id: params.id } );
+        return { result: user.fetch( { withRelated: [ 'groups' ] } ) };
     },
 
     create: function( params ) {
-        var hash = passwordHash.generate( params.password );
-        var encrypted_password = hash.split( '$' )[ 3 ];
-        var salt = hash.split( '$' )[ 1 ];
+        var password = params.password;
 
-        var user = new User({
-            email: params.email,
-            encrypted_password: encrypted_password,
-            salt: salt
-        });
+        var user = new User( _.pick( params, [ 'email', 'fname', 'lname' ] ) );
+
+        user.setPassword( password );
 
         return { result: user.save() };
     },
@@ -28,13 +24,13 @@ var UsersController = {
     update: function( params ) {
         var user = new User( { id: params.id } );
 
-        return { result: user.save( params )}
+        return { result: user.save( params ) };
     },
 
     destroy: function( params ) {
         var user = new User( { id: params.id } );
 
-        return { result: user.destroy() }
+        return { result: user.destroy() };
     }
 };
 

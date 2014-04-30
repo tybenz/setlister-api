@@ -1,6 +1,6 @@
 var Group = BaseModel.extend({
     users: function() {
-        return this.hasMany( User ).through( GroupUser );
+        return this.belongsToMany( User ).through( GroupUser );
     },
     setlists: function() {
         return this.hasMany( Setlist );

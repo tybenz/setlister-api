@@ -16,6 +16,7 @@ BaseModel.extend = function( obj ) {
     var modelname = path.basename( filepath ).replace( /\.js$/, '' );
 
     newClass.prototype.tableName = inflect.pluralize( modelname );
+    newClass.prototype.hasTimestamps = true;
 
     return newClass;
 }

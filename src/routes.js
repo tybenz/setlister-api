@@ -1,3 +1,3 @@
-module.exports = {
-    'resources users': true
+module.exports = function( router ) {
+    router.resources( 'users' );
 };

@@ -1,6 +1,7 @@
 var server = require( './server' );
-var routes = require( './routes.js' );
 var Router = require( 'paper-router' ).extend({
+    routes: require( './routes' ),
+
     buildCallback: function( fn ) {
         return function( req, res, next ) {
             var data = fn( req.params );
@@ -14,7 +15,7 @@ var Router = require( 'paper-router' ).extend({
         };
     },
 });
-var router = new Router( server, routes, __dirname + '/controllers' );
+var router = new Router( server, __dirname + '/controllers' );
 
 // [IMPORTANT] Autoloads all models/collections into global namespace
 var autoloadedModules = require( './autoload' );

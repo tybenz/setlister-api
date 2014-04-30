@@ -1,7 +1,13 @@
 var server = require( './server' );
-var Router = require( 'paper-router' ).extend({
-    routes: require( './routes' ),
 
+// Instantiating a paper router sets up route bindings to controller actions
+// Actual route declarations are defined in routes.js
+var Router = require( 'paper-router' ).extend({
+    // My version of build callback wraps the controller actions
+    // in a restify-aware callback
+    // Since each controller just returns a promise that resolves to a
+    // collection/model, any post-processing that has to be done on the data
+    // is returned as a callback. The promise is in data.result
     buildCallback: function( fn ) {
         return function( req, res, next ) {
             var data = fn( req.params );
@@ -15,7 +21,8 @@ var Router = require( 'paper-router' ).extend({
         };
     },
 });
-var router = new Router( server, __dirname + '/controllers' );
+var routes = require( './routes' );
+var router = new Router( server, __dirname + '/controllers', routes );
 
 // [IMPORTANT] Autoloads all models/collections into global namespace
 var autoloadedModules = require( './autoload' );

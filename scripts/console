@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var repl = require( 'repl' );
+var fs = require( 'fs' );
+var inflect = require( 'i' )();
+
+var modelList = fs.readdirSync( __dirname + '/../src/models' );
+for ( var i = 0, len = modelList.length; i < len; i++ ) {
+    var model = modelList[ i ];
+
+    if ( model.charAt(0) != '.' && model.match( /\.js$/ ) ) {
+        var modelName = inflect.camelize( model.split( '.' )[ 0 ] );
+        console.log( modelName + ' = require( "' + __dirname + '/../src/models/' + model + '" );' );
+        eval( modelName + ' = require( "' + __dirname + '/../src/models/' + model + '" );' );
+    }
+}
+
+var collectionList = fs.readdirSync( __dirname + '/../src/collections' );
+for ( var i = 0, len = collectionList.length; i < len; i++ ) {
+    var collection = collectionList[ i ];
+
+    if ( collection.charAt(0) != '.' && collection.match( /\.js$/ ) ) {
+        var collectionName = inflect.camelize( collection.split( '.' )[ 0 ] );
+        console.log( collectionName + ' = require( "' + __dirname + '/../src/collections/' + collection + '" );' );
+        eval( collectionName + ' = require( "' + __dirname + '/../src/collections/' + collection + '" );' );
+    }
+}
+
+repl.start( { useGlobal: true } );

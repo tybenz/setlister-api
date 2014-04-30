@@ -1,0 +1,15 @@
+{
+  "prod": {
+    "native": "true"
+  },
+
+  "dev": {
+    "driver": "pg",
+    "user": "vagrant",
+    "password": "postgres",
+    "host": "127.0.0.1",
+    "database": "setlister-dev"
+  },
+
+  "other": { "ENV": "DATABASE_URL" }
+}

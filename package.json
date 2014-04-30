@@ -1,0 +1,30 @@
+{
+  "name": "setlister-api",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tybenz/setlister-api.git"
+  },
+  "author": "Tyler Benziger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tybenz/setlister-api/issues"
+  },
+  "homepage": "https://github.com/tybenz/setlister-api",
+  "dependencies": {
+    "restify": "^2.7.0",
+    "paper-router": "^0.0.1",
+    "bookshelf": "^0.6.10",
+    "knex": "^0.5.13",
+    "db-migrate": "^0.6.4",
+    "change-case": "^2.1.1",
+    "password-hash": "^1.2.2",
+    "pg": "^3.0.3",
+    "i": "^0.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "console": "scripts/console"
+  }
+}

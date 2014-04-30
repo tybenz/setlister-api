@@ -1,0 +1,2384 @@
+[2014-04-29T20:16:48.470Z] (sys) Starting
+  Usage: nodemon [nodemon options] [script.js] [args]
+
+  See "nodemon --help" for more.
+
+[2014-04-29T20:23:20.332Z] (sys) Starting
+  Usage: nodemon [nodemon options] [script.js] [args]
+
+  See "nodemon --help" for more.
+
+[2014-04-29T20:26:33.415Z] (sys) Starting
+  Usage: nodemon [nodemon options] [script.js] [args]
+
+  See "nodemon --help" for more.
+
+[2014-04-29T20:27:51.964Z] (sys) Starting
+  Usage: nodemon [nodemon options] [script.js] [args]
+
+  See "nodemon --help" for more.
+
+[2014-04-29T20:30:19.232Z] (sys) Starting
+  Usage: nodemon [nodemon options] [script.js] [args]
+
+  See "nodemon --help" for more.
+
+[2014-04-29T20:31:51.013Z] (sys) Starting
+29 Apr 20:31:51 - [33m[nodemon] v1.0.17[39m
+29 Apr 20:31:51 - [33m[nodemon] to restart at any time, enter `rs`[39m
+29 Apr 20:31:51 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+29 Apr 20:31:51 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:31:51 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-29T20:34:23.656Z] (sys) Starting
+29 Apr 20:34:24 - [33m[nodemon] v1.0.17[39m
+29 Apr 20:34:24 - [33m[nodemon] to restart at any time, enter `rs`[39m
+29 Apr 20:34:24 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+29 Apr 20:34:24 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:34:24 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:39:48 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:39:48 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:39:49 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:40:14 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:40:14 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:40:14 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:40:18 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:40:18 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:40:18 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-29T20:41:56.247Z] (sys) Starting
+29 Apr 20:41:56 - [33m[nodemon] v1.0.17[39m
+29 Apr 20:41:56 - [33m[nodemon] to restart at any time, enter `rs`[39m
+29 Apr 20:41:56 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+29 Apr 20:41:56 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:41:57 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:08 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:08 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:08 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:19 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:19 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:19 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:25 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:25 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:25 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:31 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:31 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:31 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:36 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:36 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:36 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:43:48 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:43:48 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:43:48 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:45:55 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:45:55 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:45:55 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:46:31 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:46:31 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:46:31 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:50:12 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:50:12 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:50:12 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:51:21 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:51:21 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:51:21 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:51:31 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:51:31 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:51:31 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:51:41 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:51:41 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:51:42 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:52:19 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:52:19 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:52:19 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:52:48 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:52:48 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:52:49 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:52:50 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:52:50 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:52:50 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:52:56 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:52:56 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:52:56 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:53:54 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:53:54 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:53:54 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:00 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:00 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:01 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:03 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:03 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:03 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:28 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:28 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:28 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:32 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:32 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:33 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:45 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:45 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:45 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:54:52 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:54:52 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:54:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:07 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:07 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:07 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:12 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:12 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:12 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:14 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:14 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:14 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:20 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:20 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:20 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:24 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:24 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:24 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:31 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:31 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:31 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:56:33 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:56:33 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:56:33 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:58:11 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:58:11 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:58:11 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:58:45 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:58:45 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:58:46 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:59:16 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:59:16 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:59:16 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 20:59:28 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 20:59:28 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 20:59:28 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:00:52 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:00:52 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:00:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:00:57 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:00:57 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:00:57 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:02:10 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:02:10 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:02:10 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:09:36 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:09:36 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:09:37 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:15:07 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:15:07 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:15:07 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:15:34 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:15:34 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:15:34 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:15:41 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:15:41 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:15:41 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:16:12 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:16:12 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:16:12 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:16:20 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:16:20 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:16:20 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:16:35 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:16:35 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:16:35 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:17:28 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:17:28 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:17:28 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:18:00 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:18:00 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:18:00 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:18:07 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:18:07 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:18:07 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:18:11 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:18:11 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:18:11 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:18:12 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:18:12 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:18:12 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:18:16 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:18:16 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:18:16 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:19:48 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:19:48 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:19:49 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:20:41 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:20:41 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:20:42 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:21:02 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:21:02 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:21:02 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:22:04 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:22:04 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:22:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:22:59 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:22:59 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:22:59 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:23:37 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:23:37 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:23:38 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:24:02 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:24:02 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:24:02 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:24:18 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:24:18 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:24:18 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:16 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:16 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:16 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:40 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:40 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:40 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:47 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:47 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:47 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:51 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:51 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:51 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:57 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:57 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:57 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:25:59 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:25:59 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:25:59 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:26:04 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:26:04 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:26:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:26:48 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:26:48 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:26:48 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:26:57 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:26:57 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:26:58 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:27:04 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:27:04 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:27:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:27:18 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:27:18 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:27:18 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:27:25 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:27:25 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:27:25 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:27:33 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:27:33 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:27:34 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+29 Apr 21:27:44 - [32m[nodemon] restarting due to changes...[39m
+29 Apr 21:27:44 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+29 Apr 21:27:44 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:19:49.606Z] (sys) Starting
+30 Apr 00:19:50 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:19:50 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:19:50 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:19:50 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 00:19:50 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:24:01 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:24:01 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 00:24:01 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:24:08 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:24:08 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 00:24:08 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:24:30.566Z] (sys) Stopping
+[2014-04-30T00:24:33.075Z] (sys) Starting
+30 Apr 00:24:33 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:24:33 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:24:33 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:24:33 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 00:24:33 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:24:41.707Z] (sys) Stopping
+[2014-04-30T00:24:43.611Z] (sys) Starting
+30 Apr 00:24:44 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:24:44 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:24:44 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:24:44 - [32m[nodemon] starting `node index.js`[39m
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/vagrant/index.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 00:24:44 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:25:01.311Z] (sys) Stopping
+[2014-04-30T00:25:02.797Z] (sys) Starting
+30 Apr 00:25:03 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:25:03 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:25:03 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:25:03 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/server.js:18
+server.use( passport.initialize() );
+            ^
+ReferenceError: passport is not defined
+    at Object.<anonymous> (/vagrant/src/server.js:18:13)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/index.js:1:76)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:25:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:25:16 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:25:16 - [32m[nodemon] starting `node src/index.js`[39m
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module './routes.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/index.js:2:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+30 Apr 00:25:16 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:25:20.204Z] (sys) Stopping
+[2014-04-30T00:25:22.062Z] (sys) Starting
+30 Apr 00:25:22 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:25:22 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:25:22 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:25:22 - [32m[nodemon] starting `node src/index.js`[39m
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module './routes.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/index.js:2:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+30 Apr 00:25:23 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:25:49 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:25:49 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/controllers/users.js:14
+    create: function( params ) {
+    ^^^^^^
+SyntaxError: Unexpected identifier
+    at Module._compile (module.js:439:25)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Class.extend.getControllers (/vagrant/node_modules/paper-router/index.js:66:68)
+    at Class.extend.init (/vagrant/node_modules/paper-router/index.js:23:32)
+    at new Class (/vagrant/node_modules/paper-router/node_modules/class.extend/lib/class.js:45:19)
+    at Object.<anonymous> (/vagrant/src/index.js:18:14)
+30 Apr 00:25:50 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:25:59 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:25:59 - [32m[nodemon] starting `node src/index.js`[39m
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'pg.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/node_modules/bookshelf/node_modules/knex/clients/server/postgres.js:13:8)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+30 Apr 00:26:00 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:26:24.553Z] (sys) Stopping
+[2014-04-30T00:26:26.309Z] (sys) Starting
+30 Apr 00:26:26 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:26:26 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:26:26 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:26:26 - [32m[nodemon] starting `node src/index.js`[39m
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'i'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/models/model.js:2:15)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+30 Apr 00:26:27 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T00:26:38.293Z] (sys) Stopping
+[2014-04-30T00:26:40.167Z] (sys) Starting
+30 Apr 00:26:40 - [33m[nodemon] v1.0.17[39m
+30 Apr 00:26:40 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 00:26:40 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 00:26:40 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/group.js:3
+var Group = BaseModel.extend({
+                      ^
+TypeError: Cannot call method 'extend' of undefined
+    at Object.<anonymous> (/vagrant/src/models/group.js:3:23)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/models/user.js:2:13)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:26:41 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:26:57 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:26:57 - [32m[nodemon] starting `node src/index.js`[39m
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module '../db/'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:3:13)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+30 Apr 00:26:58 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:27:25 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:27:25 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:4
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:4:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:27:25 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:27:31 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:27:31 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:4
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:4:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:27:32 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:27:42 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:27:42 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:4
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:4:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:27:43 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:27:47 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:27:47 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:4
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:4:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:27:48 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:27:51 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:27:51 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:4
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:4:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 00:27:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 00:28:06 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:28:06 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: relation "/vagrant/src/models/models" does not exist, sql: select "/vagrant/src/models/models".* from "/vagrant/src/models/models", bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 00:29:09 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:29:09 - [32m[nodemon] starting `node src/index.js`[39m
+30 Apr 00:29:10 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:29:10 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 00:29:12 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:29:12 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 00:31:47 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:31:47 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: missing FROM-clause entry for table "undefined", sql: select "undefined".*, bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 00:32:11 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:32:11 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: missing FROM-clause entry for table "undefined", sql: select "undefined".*, bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 00:32:48 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:32:48 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: missing FROM-clause entry for table "undefined", sql: select "undefined".*, bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 00:33:39 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:33:39 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 00:33:48 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 00:33:48 - [32m[nodemon] starting `node src/index.js`[39m
+/vagrant/src/models/user.js
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: missing FROM-clause entry for table "undefined", sql: select "undefined".*, bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 04:23:24 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:23:24 - [32m[nodemon] starting `node src/index.js`[39m
+/vagrant/src/models/models
+/vagrant/src/models/user.js
+/vagrant/src/models/models
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+Possibly unhandled Error: relation "/vagrant/src/models/models" does not exist, sql: select "/vagrant/src/models/models".* from "/vagrant/src/models/models", bindings: 
+    at /vagrant/node_modules/bookshelf/node_modules/knex/clients/server/base.js:73:22
+    at tryCatch1 (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Promise$_rejectPromises [as _rejectPromises] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/promise.js:999:10)
+    at Promise.b (domain.js:183:18)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/vagrant/node_modules/bookshelf/node_modules/bluebird/js/main/async.js:37:14)
+30 Apr 04:28:24 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:28:24 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/model.js:9
+ct.pluralize( getCaller().filename.match( /[^\/]*$ )[ 0 ].replace( /\.js$/, ''
+                                                                    ^
+SyntaxError: Unexpected token ILLEGAL
+    at Module._compile (module.js:439:25)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:79)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+30 Apr 04:28:25 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:28:35 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:28:35 - [32m[nodemon] starting `node src/index.js`[39m
+/vagrant/src/models/models
+/vagrant/src/models/user.js
+/vagrant/src/models/models
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 04:29:09 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:29:09 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 04:31:42 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:31:42 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/model.js:15
+    var modelname = path.basename( filepath ).replace( /\.js$/, '' );
+                    ^
+ReferenceError: path is not defined
+    at Function.Model.extend (/vagrant/src/models/model.js:15:21)
+    at Object.<anonymous> (/vagrant/src/models/group.js:3:23)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/models/user.js:2:13)
+    at Module._compile (module.js:456:26)
+30 Apr 04:31:42 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:31:49 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:31:49 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/model.js:15
+    var modelname = path.basename( filepath ).replace( /\.js$/, '' );
+                    ^
+ReferenceError: path is not defined
+    at Function.Model.extend (/vagrant/src/models/model.js:15:21)
+    at Object.<anonymous> (/vagrant/src/models/group.js:3:23)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/models/user.js:2:13)
+    at Module._compile (module.js:456:26)
+30 Apr 04:31:50 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:33:49 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:33:49 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 04:34:58 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:34:58 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 04:36:04 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:36:04 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+luca listening at http://0.0.0.0:8083
+30 Apr 04:44:30 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:44:30 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:55:12 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:55:12 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:56:01 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:56:01 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:56:07 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:56:07 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:56:36 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:56:36 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:56:46 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:56:46 - [32m[nodemon] starting `node src/index.js`[39m
+groups
+/vagrant/src/models/user.js
+users
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+30 Apr 04:56:51 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:56:51 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:56:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:57:07 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:57:07 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:57:08 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:57:16 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:57:16 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:57:16 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:57:28 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:57:28 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:57:29 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:57:39 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:57:39 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:57:40 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:57:51 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:57:51 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:57:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:58:04 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:58:04 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:58:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:58:50 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:58:50 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:58:51 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:09 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:09 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:09 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:13 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:13 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:13 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:25 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:25 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:25 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:38 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:38 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:39 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:47 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:47 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:47 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 04:59:53 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 04:59:53 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/models/user.js:1
+tion (exports, require, module, __filename, __dirname) { var User = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/user.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/collections/users.js:1:74)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 04:59:54 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:00:01 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:00:01 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:00:01 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:02:30 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:02:30 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:02:30 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:02:37 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:02:37 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:02:38 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:03:23 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:03:23 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:03:24 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:03:29 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:03:29 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:03:30 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:03:32 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:03:32 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:03:33 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:03:41 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:03:41 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:03:41 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:04:44 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:04:44 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:04:45 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:04:50 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:04:50 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:04:51 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[2014-04-30T05:05:00.763Z] (sys) Stopping
+[2014-04-30T05:05:03.866Z] (sys) Starting
+30 Apr 05:05:04 - [33m[nodemon] v1.0.17[39m
+30 Apr 05:05:04 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 05:05:04 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 05:05:04 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:05:04 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:06:37 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:06:37 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:06:37 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:07:00 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:07:00 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:07:00 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:07:44 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:07:44 - [32m[nodemon] starting `node src/index.js`[39m
+
+/vagrant/src/collections/users.js:2
+    model: User
+           ^
+ReferenceError: User is not defined
+    at Object.<anonymous> (/vagrant/src/collections/users.js:2:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/controllers/users.js:1:75)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:07:45 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:07:52 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:07:52 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+/vagrant/src/../src/models/artist.js
+
+/vagrant/src/models/artist.js:1
+on (exports, require, module, __filename, __dirname) { var Artist = BaseModel.
+                                                                    ^
+ReferenceError: BaseModel is not defined
+    at Object.<anonymous> (/vagrant/src/models/artist.js:1:76)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/vagrant/src/index.js:29:9)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+30 Apr 05:07:52 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:08:29 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:08:29 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+/vagrant/src/../src/models/artist.js
+artists
+/vagrant/src/../src/models/group.js
+groups
+/vagrant/src/../src/models/group_user.js
+group_users
+/vagrant/src/../src/models/model.js
+/vagrant/src/../src/models/setlist.js
+setlists
+/vagrant/src/../src/models/setlist_song.js
+setlist_songs
+/vagrant/src/../src/models/song.js
+songs
+/vagrant/src/../src/models/user.js
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:08:34 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:08:34 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+/vagrant/src/../src/models/artist.js
+artists
+/vagrant/src/../src/models/group.js
+groups
+/vagrant/src/../src/models/group_user.js
+group_users
+/vagrant/src/../src/models/model.js
+/vagrant/src/../src/models/setlist.js
+setlists
+/vagrant/src/../src/models/setlist_song.js
+setlist_songs
+/vagrant/src/../src/models/song.js
+songs
+/vagrant/src/../src/models/user.js
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:10:46 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:10:46 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+artists
+groups
+group_users
+setlists
+setlist_songs
+songs
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:11:25 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:11:25 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+artists
+groups
+group_users
+setlists
+setlist_songs
+songs
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:11:34 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:11:34 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+
+/vagrant/src/index.js:29
+        if ( modelName != 'model.js' ) {
+             ^
+ReferenceError: modelName is not defined
+    at Object.<anonymous> (/vagrant/src/index.js:29:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 05:11:34 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:11:42 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:11:42 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+
+/vagrant/src/index.js:29
+        if ( modelName != 'model.js' ) {
+             ^
+ReferenceError: modelName is not defined
+    at Object.<anonymous> (/vagrant/src/index.js:29:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 05:11:43 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:11:59 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:11:59 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+
+/vagrant/src/index.js:29
+        if ( modelName != 'model.js' ) {
+             ^
+ReferenceError: modelName is not defined
+    at Object.<anonymous> (/vagrant/src/index.js:29:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 05:12:00 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:12:06 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:12:06 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+
+/vagrant/src/index.js:30
+        if ( modelName != 'model.js' ) {
+             ^
+ReferenceError: modelName is not defined
+    at Object.<anonymous> (/vagrant/src/index.js:30:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:902:3
+30 Apr 05:12:06 - [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+30 Apr 05:12:13 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:12:13 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+artists
+groups
+group_users
+setlists
+setlist_songs
+songs
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:12:23 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:12:23 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+artists
+groups
+group_users
+setlists
+setlist_songs
+songs
+users
+luca listening at http://0.0.0.0:8083
+30 Apr 05:12:30 - [32m[nodemon] restarting due to changes...[39m
+30 Apr 05:12:30 - [32m[nodemon] starting `node src/index.js`[39m
+get /users
+get /users/:id
+post /users
+put /users/:id
+del /users/:id
+luca listening at http://0.0.0.0:8083
+[2014-04-30T05:14:00.489Z] (sys) Stopping
+[2014-04-30T05:14:03.086Z] (sys) Starting
+30 Apr 05:14:03 - [33m[nodemon] v1.0.17[39m
+30 Apr 05:14:03 - [33m[nodemon] to restart at any time, enter `rs`[39m
+30 Apr 05:14:03 - [33m[nodemon] watching: /vagrant/src/**/*[39m
+30 Apr 05:14:03 - [32m[nodemon] starting `node src/index.js`[39m
+luca listening at http://0.0.0.0:8083

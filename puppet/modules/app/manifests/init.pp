@@ -49,7 +49,8 @@ class app($node_version = "v0.10.26") {
 
     # Examples of installing packages from a package.json if we need to.
     exec { "npm-install-packages":
-      cwd => "/vagrant",
+      cwd     => "/vagrant",
+      user    => "vagrant",
       command => "npm install",
       require => Exec['install-node'],
     }
@@ -78,7 +79,7 @@ class app($node_version = "v0.10.26") {
     exec { "run-migrations":
       cwd     => "/vagrant",
       path    => "/home/vagrant/nvm/${node_version}/bin",
-      command => "/home/vagrant/nvm/${node_version}/bin/db-migrate up -m api/migrations",
+      command => "/home/vagrant/nvm/${node_version}/bin/db-migrate up -m src/migrations",
       require => [Exec['install-db-migrate-npm-package'], Exec['install-pg-npm-package']],
     }
 

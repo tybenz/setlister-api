@@ -12,14 +12,12 @@ var GroupsController = {
     },
 
     show: function( params, user ) {
-        var group = new Group( { id: params.id } ).fetch( { withRelated: [ 'users' ] } );
-        return { result: group };
+        var group = new Group( { id: params.id } );
+        return { result: group.fetch( { withRelated: [ 'users' ] } ) };
     },
 
     // The user who creates the group is added to it
     create: function( params, user ) {
-        var password = params.password;
-
         var group = new Group( _.pick( params, 'title' ) );
 
         return {
@@ -39,9 +37,11 @@ var GroupsController = {
 
     update: function( params, user ) {
         var groupModel;
-        var error;
 
         var group = new Group( { id: params.id } ).fetch( { withRelated: [ 'users' ] } ).then( function( model ) {
+            if ( !model ) {
+                throw new Error( 'That group was not found.' );
+            }
             // Store actual model in groupModel
             groupModel = model;
 
@@ -52,15 +52,14 @@ var GroupsController = {
             // If u is null then the user does not belong
             // to the group they're trying to edit
             if ( !u ) {
-                error = 'You don\'t have access to that group';
-                return error;
+                throw new Error( 'You don\'t have access to that group.' );
             }
 
             // Pass back save() promise for router
             return groupModel.save( _.pick( params, [ 'title' ] ) );
         });
 
-        return { result: group, error: error };
+        return { result: group };
     },
 
     destroy: function( params, user ) {

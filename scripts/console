@@ -4,6 +4,7 @@ var repl = require( 'repl' );
 var fs = require( 'fs' );
 var inflect = require( 'i' )();
 
+global.BaseModel = require( '../src/models/model' );
 var modelList = fs.readdirSync( __dirname + '/../src/models' );
 for ( var i = 0, len = modelList.length; i < len; i++ ) {
     var model = modelList[ i ];

@@ -11,17 +11,17 @@ var Router = require( 'paper-router' ).extend({
     buildCallback: function( fn ) {
         return function( req, res, next ) {
             var data = fn( req.params, req.user );
-            if ( data.error ) {
-                res.send( 401, { error: data.error } );
-            } else {
-                data.result.then( function ( obj ) {
+            data.result.then( function ( obj ) {
+                if ( obj ) {
                     if ( data.callback ) {
                         obj = data.callback( obj );
                     }
 
                     res.send( obj );
-                }).done();
-            }
+                } else {
+                    res.send( { error: 'Not found' } );
+                }
+            }).done();
         };
     },
 });

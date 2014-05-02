@@ -1,7 +1,12 @@
 var Setlist = BaseModel.extend({
     songs: function() {
-        return this.hasMany( Song ).through( SetlistSong );
+        return this.belongsToMany( Song ).through( SetlistSong );
     },
+
+    setlist_songs: function() {
+        return this.hasMany( SetlistSong );
+    },
+
     group: function() {
         return this.belongsTo( Group );
     }

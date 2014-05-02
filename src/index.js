@@ -31,6 +31,10 @@ var router = new Router( server, __dirname + '/controllers', routes );
 // [IMPORTANT] Autoloads all models/collections into global namespace
 var autoloadedModules = require( './autoload' );
 
+server.post( '/test/:id', function(req, res, next) {
+    res.send('WORKED!');
+});
+
 server.listen( process.env.PORT || 8083, function() {
   console.log( '%s listening at %s', server.name, server.url );
 });

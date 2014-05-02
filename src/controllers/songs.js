@@ -1,30 +1,45 @@
 var _ = require( 'lodash-node' );
 var passport = require( 'passport' );
 
-var SetlistsController = {
+var SongsController = {
     auth: function( action ) {
         return passport.authenticate( 'basic' );
     },
 
     index: function( params, user ) {
-        var setlists = new Setlists();
-        var result = setlists.fetch({
-            withRelated: [ 'group', 'group.users', 'setlist_songs', 'setlist_songs.song' ]
+        var songs = new Songs();
+        var result = songs.fetch({
+            withRelated: [ 'setlists', 'setlists.group' ]
         });
         return { result: result };
     },
 
     show: function( params, user ) {
-        var setlist = new Setlist( { id: params.id } );
-        var result = setlist.fetch({
-            withRelated: [ 'group', 'group.users', 'setlist_songs', 'setlist_songs.song' ]
+        var song = new Song( { id: params.id } );
+        var result = song.fetch({
+            withRelated: [ 'setlists', 'setlists.group' ]
         });
         return { result: result };
     },
 
-    // The user who creates the setlist is added to it
+    // The user who creates the song is added to it
     create: function( params, user ) {
-        var setlist = new Setlist( _.pick( params, [ 'title', 'group_id' ] ) );
+        params = _.pick(
+            params,
+            [
+                'title',
+                'artist_id',
+                'license',
+                'year',
+                'text',
+                'key',
+                'spotify_uri',
+                'capo',
+                'info',
+                'group_id'
+            ]
+        );
+        var song = new Song( params );
 
         var result = new Group( { id: params.group_id } )
             .fetch({
@@ -38,56 +53,56 @@ var SetlistsController = {
                 var u = model.related( 'users' ).findWhere( { id: user.id } );
 
                 // If u is null then the user does not belong
-                // to the setlist they're trying to edit
+                // to the song they're trying to edit
                 if ( !u ) {
-                    throw new Error( 'You don\'t have access to that setlist.' );
+                    throw new Error( 'You don\'t have access to that song.' );
                 }
 
                 // Pass back save() promise for router
-                return setlist.save();
+                return song.save();
             });
 
         return { result: result };
     },
 
     update: function( params, user ) {
-        var setlist = new Setlist( { id: params.id } );
+        var song = new Song( { id: params.id } );
 
-        var result = setlist
+        var result = song
             .fetch({
                 withRelated: [ 'group', 'group.users' ]
             })
             .then( function( model ) {
                 if ( !model ) {
-                    throw new Error( 'That setlist was not found.' );
+                    throw new Error( 'That song was not found.' );
                 }
 
                 var group = model.related( 'group' );
 
                 if ( !group.related( 'users' ) ) {
-                    throw new Error( 'The group associated with that setlist does not exist' );
+                    throw new Error( 'The group associated with that song does not exist' );
                 }
 
                 var u = group.related( 'users' ).findWhere( { id: user.id } );
 
                 // If u is null then the user does not belong
-                // to the setlist they're trying to edit
+                // to the song they're trying to edit
                 if ( !u ) {
-                    throw new Error( 'You don\'t have access to that setlist.' );
+                    throw new Error( 'You don\'t have access to that song.' );
                 }
 
                 // Pass back save() promise for router
-                return setlist.save( _.pick( params, [ 'title' ] ) );
+                return song.save( _.pick( params, [ 'title' ] ) );
             });
 
         return { result: result };
     },
 
     destroy: function( params, user ) {
-        var setlist = new Setlist( { id: params.id } );
+        var song = new Song( { id: params.id } );
 
-        return { result: setlist.destroy() };
+        return { result: song.destroy() };
     }
 };
 
-module.exports = SetlistsController;
+module.exports = SongsController;

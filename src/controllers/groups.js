@@ -8,12 +8,21 @@ var GroupsController = {
 
     index: function( params, user ) {
         var groups = new Groups();
-        return { result: groups.fetch( { withRelated: [ 'users' ] } ) };
+
+        return {
+            result: groups.fetch({
+                withRelated: [ 'users' ]
+            })
+        };
     },
 
     show: function( params, user ) {
         var group = new Group( { id: params.id } );
-        return { result: group.fetch( { withRelated: [ 'users' ] } ) };
+        return {
+            result: group.fetch({
+                withRelated: [ 'users' ]
+            })
+        };
     },
 
     // The user who creates the group is added to it
@@ -38,28 +47,33 @@ var GroupsController = {
     update: function( params, user ) {
         var groupModel;
 
-        var group = new Group( { id: params.id } ).fetch( { withRelated: [ 'users' ] } ).then( function( model ) {
-            if ( !model ) {
-                throw new Error( 'That group was not found.' );
-            }
-            // Store actual model in groupModel
-            groupModel = model;
+        var group = new Group( { id: params.id } );
 
-            return model.users().fetch();
-        }).then( function( collection ) {
-            var u = collection.findWhere( { id: user.id } );
+        var result = group.fetch({
+                withRelated: [ 'users' ]
+            })
+            .then( function( model ) {
+                if ( !model ) {
+                    throw new Error( 'That group was not found.' );
+                }
+                // Store actual model in groupModel
+                groupModel = model;
 
-            // If u is null then the user does not belong
-            // to the group they're trying to edit
-            if ( !u ) {
-                throw new Error( 'You don\'t have access to that group.' );
-            }
+                return model.users().fetch();
+            }).then( function( collection ) {
+                var u = collection.findWhere( { id: user.id } );
 
-            // Pass back save() promise for router
-            return groupModel.save( _.pick( params, [ 'title' ] ) );
-        });
+                // If u is null then the user does not belong
+                // to the group they're trying to edit
+                if ( !u ) {
+                    throw new Error( 'You don\'t have access to that group.' );
+                }
 
-        return { result: group };
+                // Pass back save() promise for router
+                return groupModel.save( _.pick( params, [ 'title' ] ) );
+            });
+
+        return { result: result };
     },
 
     destroy: function( params, user ) {

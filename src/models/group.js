@@ -5,6 +5,10 @@ var Group = BaseModel.extend({
 
     setlists: function() {
         return this.hasMany( Setlist );
+    },
+
+    songs: function() {
+        return this.hasMany( Song );
     }
 });
 

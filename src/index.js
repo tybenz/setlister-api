@@ -29,7 +29,7 @@ var routes = require( './routes' );
 var router = new Router( server, __dirname + '/controllers', routes );
 
 // [IMPORTANT] Autoloads all models/collections into global namespace
-var autoloadedModules = require( './autoload' );
+require( './autoload' );
 
 server.post( '/test/:id', function(req, res, next) {
     res.send('WORKED!');

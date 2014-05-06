@@ -6,7 +6,7 @@ var GroupsController = {
         return passport.authenticate( 'basic' );
     },
 
-    index: function( params, user ) {
+    index: function( params, currentUser ) {
         var groups = new Groups();
 
         return {
@@ -16,67 +16,56 @@ var GroupsController = {
         };
     },
 
-    show: function( params, user ) {
+    show: function( params, currentUser ) {
         var group = new Group( { id: params.id } );
         return {
             result: group.fetch({
-                withRelated: [ 'users' ]
+                withRelated: [ 'users', 'songs', 'setlists' ]
             })
         };
     },
 
     // The user who creates the group is added to it
-    create: function( params, user ) {
+    create: function( params, currentUser ) {
         var group = new Group( _.pick( params, 'title' ) );
 
-        return {
-            result: group.save(),
-            callback: function( group ) {
-                var groupUser = new GroupUser({
-                    user_id: user.id,
-                    group_id: group.id
-                });
-
-                groupUser.save();
-
-                return group;
-            }
-        };
-    },
-
-    update: function( params, user ) {
-        var groupModel;
-
-        var group = new Group( { id: params.id } );
-
-        var result = group.fetch({
-                withRelated: [ 'users' ]
-            })
-            .then( function( model ) {
-                if ( !model ) {
-                    throw new Error( 'That group was not found.' );
-                }
-                // Store actual model in groupModel
-                groupModel = model;
-
-                return model.users().fetch();
-            }).then( function( collection ) {
-                var u = collection.findWhere( { id: user.id } );
-
-                // If u is null then the user does not belong
-                // to the group they're trying to edit
-                if ( !u ) {
-                    throw new Error( 'You don\'t have access to that group.' );
-                }
-
-                // Pass back save() promise for router
-                return groupModel.save( _.pick( params, [ 'title' ] ) );
+        var result = group.save().then( function( group ) {
+            var groupUser = new GroupUser({
+                user_id: currentUser.id,
+                group_id: group.id
             });
+
+            groupUser.save();
+
+            return group;
+        });
 
         return { result: result };
     },
 
-    destroy: function( params, user ) {
+    update: function( params, currentUser ) {
+        var group = new Group( { id: params.id } );
+
+        var result = group.fetch({
+            withRelated: [ 'users' ]
+        })
+        .then( function( group ) {
+            if ( !group || !group.related( 'users' ) ) {
+                throw new Error( 'That group was not found.' );
+            }
+
+            var user = group.related( 'users' ).findWhere( { id: currentUser.id } );
+            if ( !user && !currentUser.isAdmin() ) {
+                throw new Error( 'You don\'t have access to that group' );
+            }
+
+            return group.save( _.pick( params, [ 'title' ] ) );
+        });
+
+        return { result: result };
+    },
+
+    destroy: function( params, currentUser ) {
         var group = new Group( { id: params.id } );
 
         return { result: group.destroy() };

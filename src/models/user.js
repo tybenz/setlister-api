@@ -22,6 +22,10 @@ var User = BaseModel.extend({
         var hash = 'sha1$' + this.get( 'salt' ) + '$1$' + this.get( 'encrypted_password' );
 
         return passwordHash.verify( password, hash );
+    },
+
+    isAdmin: function() {
+        return this.get( 'admin' );
     }
 });
 

@@ -10,10 +10,6 @@ var SetlistSongsController = {
         var setlistSongs = new SetlistSongs();
         var result = setlistSongs.fetch({
             withRelated: [ 'setlist', 'song' ]
-        })
-        .then(function(collection) {
-            console.log(collection);
-            return collection.fetch();
         });
         return { result: result };
     },

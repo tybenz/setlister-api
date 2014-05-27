@@ -6,26 +6,29 @@ var SongsController = {
         return passport.authenticate( 'basic' );
     },
 
-    index: function( params, currentUser ) {
-        var songs = new Songs();
-        var result = songs.fetch({
+    index: function( req, res, next ) {
+        new Songs().fetch({
             withRelated: [ 'setlists', 'setlists.group' ]
+        })
+        .then( function( songs ) {
+            res.send( songs );
         });
-        return { result: result };
     },
 
-    show: function( params, currentUser ) {
-        var song = new Song( { id: params.id } );
-        var result = song.fetch({
+    show: function( req, res, next ) {
+        new Song( { id: req.params.id } )
+        .fetch({
             withRelated: [ 'setlists', 'setlists.group' ]
+        })
+        .then( function( song ) {
+            res.send( song );
         });
-        return { result: result };
     },
 
     // The user who creates the song is added to it
-    create: function( params, currentUser ) {
-        params = _.pick(
-            params,
+    create: function( req, res, next ) {
+        req.params = _.pick(
+            req.params,
             [
                 'title',
                 'artist_id',
@@ -39,33 +42,34 @@ var SongsController = {
                 'group_id'
             ]
         );
-        var song = new Song( params );
+        var song = new Song( req.params );
 
-        var result = new Group( { id: params.group_id } ).fetch({
+        var result = new Group( { id: req.params.group_id } ).fetch({
             withRelated: [ 'users' ]
         })
-        .then( function( song ) {
-            if ( !song ) {
+        .then( function( group ) {
+            if ( !group ) {
                 throw new Error( 'That group does not exist' );
             }
 
-            var user = song.related( 'users' ).findWhere( { id: currentUser.id } );
+            var user = group.related( 'users' ).findWhere( { id: req.user.id } );
 
             // If u is null then the user does not belong
-            // to the song they're trying to edit
-            if ( !user && !currentUser.isAdmin() ) {
-                throw new Error( 'You don\'t have access to that song.' );
+            // to the group they're trying to edit
+            if ( !user && !req.user.isAdmin() ) {
+                throw new Error( 'You don\'t have access to that group\'s songs.' );
             }
 
             // Pass back save() promise for router
             return song.save();
+        })
+        .then( function( song ) {
+            res.send( song );
         });
-
-        return { result: result };
     },
 
-    update: function( params, currentUser ) {
-        var song = new Song( { id: params.id } );
+    update: function( req, res, next ) {
+        var song = new Song( { id: req.params.id } );
 
         var result = song.fetch({
             withRelated: [ 'group', 'group.users' ]
@@ -81,7 +85,7 @@ var SongsController = {
                 throw new Error( 'The group associated with that song does not exist' );
             }
 
-            var user = group.related( 'users' ).findWhere( { id: currentUser.id } );
+            var user = group.related( 'users' ).findWhere( { id: req.user.id } );
 
             // If u is null then the user does not belong
             // to the song they're trying to edit
@@ -90,16 +94,19 @@ var SongsController = {
             }
 
             // Pass back save() promise for router
-            return song.save( _.pick( params, [ 'title' ] ) );
+            return song.save( _.pick( req.params, [ 'title' ] ) );
+        })
+        .then( function( song ) {
+            res.send( song );
         });
-
-        return { result: result };
     },
 
-    destroy: function( params, currentUser ) {
-        var song = new Song( { id: params.id } );
-
-        return { result: song.destroy() };
+    destroy: function( req, res, next ) {
+        new Song( { id: req.params.id } )
+        .destroy()
+        .then( function( song ) {
+            res.send( song );
+        });
     }
 };
 

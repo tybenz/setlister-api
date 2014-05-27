@@ -9,49 +9,66 @@ var UsersController = {
         return null;
     },
 
-    index: function( params, currentUser ) {
+    index: function( req, res, next ) {
         var users = new Users();
 
-        if ( !currentUser.isAdmin() ) {
+        if ( !req.user.isAdmin() ) {
             throw new Error( 'You must be an admin to perform that action' );
         }
 
-        return { result: users.fetch( { withRelated: [ 'groups' ] } ) };
+        users.fetch( { withRelated: [ 'groups' ] } )
+        .then( function( users ) {
+            res.send( users );
+        });
     },
 
-    show: function( params, currentUser ) {
-        var user = new User( { id: params.id } );
-        return { result: user.fetch( { withRelated: [ 'groups' ] } ) };
+    show: function( req, res, next ) {
+        new User( { id: req.params.id } )
+        .fetch({
+            withRelated: [ 'groups' ]
+        })
+        .then( function( user ) {
+            res.send( user );
+        });
     },
 
-    create: function( params ) {
-        var password = params.password;
+    create: function( req, res, next ) {
+        var password = req.params.password;
 
-        var user = new User( _.pick( params, [ 'email', 'fname', 'lname' ] ) );
+        var user = new User( _.pick( req.params, [ 'email', 'fname', 'lname' ] ) );
 
         user.setPassword( password );
 
-        return { result: user.save() };
+        user.save()
+        .then( function( user ) {
+            res.send( user );
+        });
     },
 
-    update: function( params, currentUser ) {
-        var user = new User( { id: params.id } );
+    update: function( req, res, next ) {
+        var user = new User( { id: req.params.id } );
 
-        if ( !currentUser.isAdmin() && currentUser.id != params.id ) {
+        if ( !req.user.isAdmin() && req.user.id != req.params.id ) {
             throw new Error( 'You must be an admin to perform that action' );
         }
 
-        return { result: user.save( params ) };
+        user.save( req.params )
+        .then( function( user ) {
+            res.send( user );
+        });
     },
 
-    destroy: function( params, currentUser ) {
-        var user = new User( { id: params.id } );
+    destroy: function( req, res, next ) {
+        var user = new User( { id: req.params.id } );
 
-        if ( !currentUser.isAdmin() ) {
+        if ( !req.user.isAdmin() ) {
             throw new Error( 'You must be an admin to perform that action' );
         }
 
-        return { result: user.destroy() };
+        user.destroy()
+        .then( function( user ) {
+            res.send( user );
+        });
     }
 };
 

@@ -6,51 +6,56 @@ var SetlistsController = {
         return passport.authenticate( 'basic' );
     },
 
-    index: function( params, currentUser ) {
-        var setlists = new Setlists();
-        var result = setlists.fetch({
+    index: function( req, res, next ) {
+        new Setlists()
+        .fetch({
             withRelated: [ 'group', 'group.users', 'setlist_songs', 'setlist_songs.song' ]
+        })
+        .then( function( setlists ) {
+            res.send( setlists );
         });
-        return { result: result };
     },
 
-    show: function( params, currentUser ) {
-        var setlist = new Setlist( { id: params.id } );
-        var result = setlist.fetch({
+    show: function( req, res, next ) {
+        new Setlist( { id: req.params.id } )
+        .fetch({
             withRelated: [ 'group', 'group.users', 'setlist_songs', 'setlist_songs.song' ]
+        })
+        .then( function( setlist ) {
+            res.send( setlist );
         });
-        return { result: result };
     },
 
     // The user who creates the setlist is added to it
-    create: function( params, currentUser ) {
-        var setlist = new Setlist( _.pick( params, [ 'title', 'group_id' ] ) );
+    create: function( req, res, next ) {
+        var setlist = new Setlist( _.pick( req.params, [ 'title', 'group_id' ] ) );
 
-        var result = new Group( { id: params.group_id } ).fetch({
+        new Group( { id: req.params.group_id } ).fetch({
             withRelated: [ 'users' ]
         })
-        .then( function( setlist ) {
-            if ( !setlist ) {
+        .then( function( group ) {
+            if ( !group ) {
                 throw new Error( 'That group does not exist' );
             }
 
-            var user = setlist.related( 'users' ).findWhere( { id: currentUser.id } );
+            var user = group.related( 'users' ).findWhere( { id: req.user.id } );
 
             // If u is null then the user does not belong
             // to the setlist they're trying to edit
-            if ( !user && !currentUser.isAdmin() ) {
-                throw new Error( 'You don\'t have access to that setlist.' );
+            if ( !user && !req.user.isAdmin() ) {
+                throw new Error( 'You don\'t have access to that group\'s setlists.' );
             }
 
             // Pass back save() promise for router
             return setlist.save();
+        })
+        .then( function( setlist ) {
+            res.send( setlist );
         });
-
-        return { result: result };
     },
 
-    update: function( params, currentUser ) {
-        var setlist = new Setlist( { id: params.id } );
+    update: function( req, res, next ) {
+        var setlist = new Setlist( { id: req.params.id } );
 
         var result = setlist.fetch({
             withRelated: [ 'group', 'group.users' ]
@@ -66,25 +71,28 @@ var SetlistsController = {
                 throw new Error( 'The group associated with that setlist does not exist' );
             }
 
-            var user = group.related( 'users' ).findWhere( { id: currentUser.id } );
+            var user = group.related( 'users' ).findWhere( { id: req.user.id } );
 
             // If u is null then the user does not belong
             // to the setlist they're trying to edit
-            if ( !user && !currentUser.isAdmin() ) {
+            if ( !user && !req.user.isAdmin() ) {
                 throw new Error( 'You don\'t have access to that setlist.' );
             }
 
             // Pass back save() promise for router
-            return setlist.save( _.pick( params, [ 'title' ] ) );
+            return setlist.save( _.pick( req.params, [ 'title' ] ) );
+        })
+        .then( function( setlist ) {
+            res.send( setlist );
         });
-
-        return { result: result };
     },
 
-    destroy: function( params, currentUser ) {
-        var setlist = new Setlist( { id: params.id } );
-
-        return { result: setlist.destroy() };
+    destroy: function( req, res, next ) {
+        new Setlist( { id: req.params.id } )
+        .destroy()
+        .then( function ( setlist ) {
+            res.send( setlist );
+        });
     }
 };
 

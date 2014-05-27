@@ -2,7 +2,6 @@ var restify = require( 'restify' );
 var Bookshelf = require( 'bookshelf' );
 var passport = require( 'passport' );
 var BaseModel = require( './models/model' );
-// var User = require( './models/user' );
 var BasicStrategy = require( 'passport-http' ).BasicStrategy;
 var server = restify.createServer({
   name: 'luca',

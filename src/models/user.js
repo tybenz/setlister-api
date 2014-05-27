@@ -6,7 +6,6 @@ var User = BaseModel.extend({
     },
 
     setPassword: function( plainText ) {
-        console.log(plainText);
         var hash = passwordHash.generate( plainText );
         var encryptedPassword = hash.split( '$' )[ 3 ];
         var salt = hash.split( '$' )[ 1 ];

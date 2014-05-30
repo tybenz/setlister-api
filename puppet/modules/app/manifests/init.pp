@@ -50,8 +50,7 @@ class app($node_version = "v0.10.26") {
     # Examples of installing packages from a package.json if we need to.
     exec { "npm-install-packages":
       cwd     => "/vagrant",
-      user    => "vagrant",
-      command => "npm install",
+      command => "su vagrant -c \"/home/vagrant/nvm/${app::node_version}/bin/npm install\"",
       require => Exec['install-node'],
     }
 

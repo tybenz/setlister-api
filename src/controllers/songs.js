@@ -70,6 +70,21 @@ var SongsController = {
 
     update: function( req, res, next ) {
         var song = new Song( { id: req.params.id } );
+        req.params = _.pick(
+            req.params,
+            [
+                'title',
+                'artist_id',
+                'license',
+                'year',
+                'text',
+                'key',
+                'spotify_uri',
+                'capo',
+                'info',
+                'group_id'
+            ]
+        );
 
         var result = song.fetch({
             withRelated: [ 'group', 'group.users' ]
@@ -94,7 +109,7 @@ var SongsController = {
             }
 
             // Pass back save() promise for router
-            return song.save( _.pick( req.params, [ 'title' ] ) );
+            return song.save( req.params );
         })
         .then( function( song ) {
             res.send( song );

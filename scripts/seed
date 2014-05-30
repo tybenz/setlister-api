@@ -1,0 +1,252 @@
+#!/usr/bin/env node
+
+require( '../src/autoload.js' );
+var passwordHash = require( 'password-hash' );
+var Promise = require( 'bluebird' );
+
+var users = {
+    'foobar': {
+        email: 'foo@bar.com',
+        password: 'foobar',
+        admin: true
+    }
+};
+
+var seedUsers = function() {
+  var userPromises = [];
+
+  for ( var i in users ) {
+      if ( users.hasOwnProperty( i ) ) {
+          var userProps = users[i];
+          var hashedPassword = passwordHash.generate( userProps.password );
+          var user = new User({
+            admin: userProps.admin,
+            email: userProps.email,
+            encrypted_password: hashedPassword.split( '$' )[ 3 ],
+            salt: hashedPassword.split( '$' )[ 1 ]
+          })
+          .save()
+          .then( function ( user ) {
+            users[i].model = user;
+
+            return user;
+          });
+
+          userPromises.push( user );
+      }
+  }
+
+  return Promise.all( userPromises );
+}
+
+var groups = {
+    'lifepoint': {
+        title: 'LifePoint',
+        users: [ 'foobar' ]
+    }
+};
+
+var seedGroups = function() {
+  var groupPromises = [];
+
+  for ( var i in groups ) {
+    if ( groups.hasOwnProperty( i ) ) {
+      var groupProps = groups[ i ];
+      var group = new Group( { title: groupProps.title } )
+      .save()
+      .then( function( group ) {
+        for ( var j = 0, len = groupProps.users.length; j < len; j++ ) {
+          var userId = groupProps.users[j];
+
+          new GroupUser( { group_id: group.id, user_id: users[ userId ].model.id } )
+          .save()
+          .done();
+        }
+
+        groups[ i ].model = group;
+
+        return group;
+      });
+
+      groupPromises.push( group );
+    }
+  }
+
+  return Promise.all( groupPromises );
+}
+
+var setlists = {
+    'first': {
+        title: 'First',
+        group: 'lifepoint'
+    }
+};
+
+var seedSetlists = function() {
+  var setlistPromises = [];
+
+  for ( var i in setlists ) {
+    if ( setlists.hasOwnProperty( i ) ) {
+      var setlistProps = setlists[i];
+      var setlist = new Setlist( { title: setlistProps.title, group_id: groups[ setlistProps.group ].model.id } )
+      .save()
+      .then( function( setlist ) {
+        setlists[ i ].model = setlist;
+
+        return setlist;
+      });
+
+      setlistPromises.push( setlist );
+    }
+  }
+
+  return Promise.all( setlistPromises );
+}
+
+var artists = {
+    'chris-tomlin': {
+        name: 'Chris Tomlin'
+    },
+    'david-crowder': {
+        name: 'David Crowder Band'
+    }
+};
+
+var seedArtists = function() {
+  var artistPromises = [];
+
+  for ( var i in artists ) {
+    if ( artists.hasOwnProperty( i ) ) {
+      var artistProps = artists[i];
+      var artist = new Artist( artistProps )
+      .save()
+      .then( function( artist ) {
+        artists[ i ].model = artist;
+
+        return artist;
+      });
+
+      artistPromises.push( artist );
+    }
+  }
+
+  return Promise.all( artistPromises );
+}
+
+var songs = {
+    'our-god': {
+        title: 'Our God',
+        group: 'lifepoint',
+        artist: 'chris-tomlin',
+        license: 'CCLI 1231243',
+        year: '2010-01-01',
+        key: 'G',
+        text: 'INTRO:\nEm C G D\n\n\nVERSE 1:\nEm         D           G \nWater you turned into wine\nEm         D             G \nOpened the eyes of the blind\n                Am \nThere\'s no one like you\n           D \nNone like you\n\nVERSE 2:\n\nInto the darkness you shine\nOut of the ashes we rise\nThere\'s no one like you\nNone like you\n\nCHORUS:\nEm\nOur God is greater\nC\nOur God is stronger\nG                       D \nGod you are higher than any other\nEm\nOur God is healer\nC\nAwesome in power\n     G       D \nOur God our God\n\nBRIDGE:\nEm\nAnd if our God is for us\nC\nThen who could ever stop us\nG \nAnd if our God with us\nD \nThen what can stand against'
+    },
+    'everything-glorious': {
+        title: 'Everything Glorious',
+        group: 'lifepoint',
+        artist: 'chris-tomlin',
+        license: 'CCLI 24352345',
+        year: '2011-01-01',
+        key: 'C',
+        text: 'INTRO:  C   G   F\n\n\nVERSE 1:\nC            G          F\nThe day is brighter here with You\nC            G      F\nThe night is lighter than its hue\nC               G         F\nWould lead me to believe\nC                G         F\nWhich leads me to believe\n\n\nCHORUS:\nC                G                    F\nYou make everything glorious\nC                G                    F\nYou make everything glorious\nC                G                    F          C      G      F\nYou make everything glorious and I am Yours\n\nWhat does that make me?\n\n\nVERSE 2:\nC          G             F\nMy eyes are small but they have seen\nC          G       F\nThe beauty of enormous things\nC                G         F\nWhich leads me to believe\nC                G            F\nThere’s light enough to see that\n\n\nBRIDGE:\nAm           G/B       C             \nFrom glory to glory You are glorious\n           G\nYou are glorious\nF              G/B       C             \nFrom glory to glory You are glorious\n           G\nYou are glorious\nF\nWhich leads me to believe\n\nWhy I can believe that\n\n\nOUTRO:\nC          G  F     \nFrom glory to glory\n     C          G  F\nFrom glory to glory\nC                G     F\nYou are glorious, You are glorious\nC                G     F\nYou are glorious, You are glorious'
+    },
+    'all-my-fountains': {
+        title: 'All My Fountains',
+        group: 'lifepoint',
+        artist: 'chris-tomlin',
+        license: 'CCLI 03294234',
+        year: '2012-01-01',
+        key: 'E',
+        text: 'VERSE 1:\n\nC#m\nThis dry and desert land\nA                          E      E\nI tell myself keep walking on\nC#m\nHear something up ahead\nA                    E     E\nWater falling like a song\nC#m\nAn ever lasting stream\nA                     E\nYour river carries me home\nE\nLet it flow\nLet it flow\n\nVERSE 2:\n\n_A flood for my soul\n_A well that never will run dry\nI\'ve rambled on my own\nNever believing I would find \nAn everlasting stream\nYour river carries me home\nLet it flow\nLet it flow\n\nCHROSU:\n\nE\nOpen the heavens\nE\nCome living water\n                 A               E\n All my fountains are in you\n\nE\nStrong like a river\nE\nYour love is running through\n               A                  E\nAll my fountains are in you\n\nBRIDGE:\n\nC#m\nRain down on us\nA                   E      E\nRain down on us lord\n'
+    },
+    'no-one-like-you': {
+        title: 'No One Like You',
+        group: 'lifepoint',
+        artist: 'chris-tomlin',
+        license: 'CCLI 293847298',
+        year: '2005-01-01',
+        key: 'G',
+        text: 'INSTRUMENTAL:  G  D  Em  C  (2x)\n\n\nVERSE 1:\nG           Em        D           C\nYou are more beautiful than anyone ever\nG        Em              D                C\nEveryday You\'re The same You never change no cever\nG               Em        D               C\nAnd how could I ever deny the love of my Saviour\nG             Em         D          C\nYou are to me everything all I need forever\n\nPRECHORUS: \n D             C\n How could you be so good\n\n\nCHORUS: \nG     D  Em     C\nThere is no one like you\nG         D      Em         C\nThere has never ever been anyone like you\n\n\nVERSE 2: \nG         Em            D             C\nEverywhere You are there earth or air surrounding\nG           Em           D\nI\'m not alone the heavens sing along\nD                C\nMy God You\'re so astounding\nG                Em              D\nHow could you be so good to be\n           C\nEternally, I believe it\n\n\nBRIDGE:\nD             C\nHow could you be so good to me?\nD             C\nHow could you be so good to me?\nD              C\nWere not alone so sing along\nD              C             C          C\nWere not alone so sing along sing along sing along'
+    }
+};
+
+var seedSongs = function() {
+  var songPromises = [];
+
+  for ( var i in songs ) {
+    if ( songs.hasOwnProperty( i ) ) {
+      var songProps = songs[i];
+      var song = new Song({
+        title: songProps.title,
+        artist_id: artists[ songProps.artist ].model,
+        group_id: groups[ songProps.group ].model.id,
+        license: songProps.license,
+        year: songProps.year,
+        key: songProps.key,
+        text: songProps.text
+      })
+      .save()
+      .bind( { index: i } )
+      .then( function( song ) {
+        songs[ this.index ].model = song;
+
+        return song;
+      });
+
+      songPromises.push( song );
+    }
+  }
+
+  return Promise.all( songPromises );
+}
+
+var setlistSongs = {
+    '1': {
+        setlist: 'first',
+        song: 'our-god'
+    },
+    '2': {
+        setlist: 'first',
+        song: 'everything-glorious'
+    },
+    '3': {
+        setlist: 'first',
+        song: 'all-my-fountains'
+    },
+    '4': {
+        setlist: 'first',
+        song: 'no-one-like-you'
+    }
+};
+
+var seedSetlistSongs = function() {
+  var setlistSongPromises = [];
+
+  for ( var i in setlistSongs ) {
+    if ( setlistSongs.hasOwnProperty( i ) ) {
+      var setlistSongProps = setlistSongs[i];
+      var setlistSong = new SetlistSong({
+        song_id: songs[ setlistSongProps.song ].model.id,
+        setlist_id: setlists[ setlistSongProps.setlist ].model.id
+      })
+      .save();
+
+      setlistSongPromises.push( setlistSong );
+    }
+  }
+
+  return Promise.all( setlistSongPromises );
+}
+
+seedUsers()
+.then( seedGroups )
+.then( seedSetlists )
+.then( seedArtists )
+.then( seedSongs )
+.then( seedSetlistSongs )
+.then( function() {
+  console.log( 'Seed finished' );
+  process.exit();
+});

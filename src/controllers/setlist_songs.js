@@ -37,7 +37,7 @@ var SetlistSongsController = {
         })
         .then( function( setlist ) {
             if ( !setlist ) {
-                throw new Error( 'That setlist does not exist' );
+                res.send( 404, new Error( 'That setlist does not exist' ) );
             }
 
             var group = setlist.related( 'group' );
@@ -46,7 +46,7 @@ var SetlistSongsController = {
             // If user is null then the user does not belong
             // to the setlist_song they're trying to edit
             if ( !user && !req.user.isAdmin() ) {
-                throw new Error( 'You don\'t have access to that setlist_song.' );
+                res.send( 401, new Error( 'You don\'t have access to that setlist_song.' ) );
             }
 
             // Pass back save() promise for router

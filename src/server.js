@@ -4,7 +4,7 @@ var passport = require( 'passport' );
 var BaseModel = require( './models/model' );
 var BasicStrategy = require( 'passport-http' ).BasicStrategy;
 var server = restify.createServer({
-  name: 'luca',
+  name: 'setlister',
   version: '0.0.0'
 });
 

@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+var Knex = require( 'knex' );
+var Promise = require( 'bluebird' );
+
+var knex = Knex.initialize({
+  client: 'pg',
+  connection: process.env.DATABASE_URL || {
+    host: 'localhost',
+    user: 'vagrant',
+    password: 'postgres',
+    database: 'setlister-dev',
+    charset: 'utf-8'
+  }
+});
+
+var tables = [
+  'users',
+  'artists',
+  'groups',
+  'setlists',
+  'group_users',
+  'setlist_songs',
+  'songs'
+];
+
+var promises = [];
+
+for ( var i = 0, len = tables.length; i < len; i++ ) {
+  promises.push( knex( tables[ i ] ).truncate() );
+}
+
+Promise.all( promises ).done( function() {
+  console.log( 'Truncated tables: [ ' + tables.join( ', ' ) + ' ]' );
+  process.exit();
+});

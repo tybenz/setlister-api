@@ -23,4 +23,4 @@ fs.readdirSync( __dirname + '/../src/collections' ).forEach( function( collectio
     }
 });
 
-module.exports = module;
+module.exports = modules;

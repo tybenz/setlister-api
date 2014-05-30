@@ -14,7 +14,7 @@
   "homepage": "https://github.com/tybenz/setlister-api",
   "dependencies": {
     "restify": "^2.7.0",
-    "paper-router": "^0.2.1",
+    "paper-router": "^0.2.3",
     "bookshelf": "^0.6.10",
     "knex": "^0.5.13",
     "db-migrate": "^0.6.4",
@@ -24,10 +24,14 @@
     "i": "^0.3.2",
     "lodash-node": "^2.4.1",
     "passport": "^0.2.0",
-    "passport-http": "^0.2.2"
+    "passport-http": "^0.2.2",
+    "bluebird": "^1.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "console": "scripts/console"
+    "console": "scripts/console",
+    "db-seed": "scripts/seed",
+    "db-truncate": "scripts/truncate",
+    "db-reset": "scripts/truncate && scripts/seed"
   }
 }

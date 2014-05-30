@@ -3,7 +3,7 @@ var _ = require( 'lodash-node' );
 
 var UsersController = {
     auth: function( action ) {
-        if ( action != 'create' ) {
+        if ( action != 'create' && action != 'login' ) {
             return passport.authenticate( 'basic' );
         }
         return null;
@@ -13,12 +13,13 @@ var UsersController = {
         var users = new Users();
 
         if ( !req.user.isAdmin() ) {
-            throw new Error( 'You must be an admin to perform that action' );
+            res.send( 401, new Error( 'You must be an admin to perform that action' ) );
         }
 
         users.fetch( { withRelated: [ 'groups' ] } )
         .then( function( users ) {
             res.send( users );
+            next();
         });
     },
 
@@ -49,7 +50,7 @@ var UsersController = {
         var user = new User( { id: req.params.id } );
 
         if ( !req.user.isAdmin() && req.user.id != req.params.id ) {
-            throw new Error( 'You must be an admin to perform that action' );
+            res.send( 401, new Error( 'You must be an admin to perform that action' ) );
         }
 
         user.save( req.params )
@@ -62,12 +63,34 @@ var UsersController = {
         var user = new User( { id: req.params.id } );
 
         if ( !req.user.isAdmin() ) {
-            throw new Error( 'You must be an admin to perform that action' );
+            res.send( 401, new Error( 'You must be an admin to perform that action' ) );
+            next();
         }
 
         user.destroy()
         .then( function( user ) {
             res.send( user );
+        });
+    },
+
+    login: function( req, res, next ) {
+        new User( { email: req.params.email } )
+        .fetch()
+        .then( function( user ) {
+            if ( user && user.verify( req.params.password ) ) {
+                req.login( user, function( err ) {
+                    if ( err ) return next( err );
+                    return res.send( { message: 'Successfully logged in' } );
+                });
+            } else {
+                res.send( 401, 'Incorrect email and/or password' );
+            }
+        });
+    },
+
+    logout: function( req, res, next ) {
+        req.session.destroy( function ( err ) {
+            res.send( { message: 'Successfully logged out' } );
         });
     }
 };

@@ -3,11 +3,20 @@ var passport = require( 'passport' );
 
 var SetlistSongsController = {
     auth: function( action ) {
-        return passport.authenticate( 'basic' );
+        // return passport.authenticate( 'basic' );
+        return null;
     },
 
     index: function( req, res, next ) {
-        new SetlistSongs().fetch({
+        var setlistId = req.params.setlist_id;
+        var params = {};
+
+        if ( setlistId ) {
+            params.setlist_id = setlistId;
+        }
+
+        new SetlistSongs( params )
+        .fetch({
             withRelated: [ 'setlist', 'song' ]
         })
         .then( function( setlistSongs ) {

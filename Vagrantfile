@@ -17,12 +17,12 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network :forwarded_port, guest: 8089, host: 8089
-  config.vm.network :forwarded_port, guest: 22, host: 2626
+  config.vm.network :forwarded_port, guest: 22, host: 2727
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # TODO: Add a host entry to your hosts file; e.g. 192.168.33.10 <local.appurl.com>
-  config.vm.network :private_network, ip: "33.33.33.15"
+  config.vm.network :private_network, ip: "192.168.33.11"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on

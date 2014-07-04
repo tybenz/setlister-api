@@ -3,3 +3,5 @@ node_modules
 .vagrant
 node_app.log
 npm-debug.log
+scratch.js
+*.swp

@@ -16,10 +16,10 @@ var UsersController = {
             res.send( 401, new Error( 'You must be an admin to perform that action' ) );
         }
 
-        users.fetch( { withRelated: [ 'groups' ] } )
+        users
+        .fetch( { withRelated: [ 'groups' ] } )
         .then( function( users ) {
             res.send( users );
-            next();
         });
     },
 
@@ -64,35 +64,34 @@ var UsersController = {
 
         if ( !req.user.isAdmin() ) {
             res.send( 401, new Error( 'You must be an admin to perform that action' ) );
-            next();
         }
 
         user.destroy()
         .then( function( user ) {
             res.send( user );
         });
-    },
-
-    login: function( req, res, next ) {
-        new User( { email: req.params.email } )
-        .fetch()
-        .then( function( user ) {
-            if ( user && user.verify( req.params.password ) ) {
-                req.login( user, function( err ) {
-                    if ( err ) return next( err );
-                    return res.send( { message: 'Successfully logged in' } );
-                });
-            } else {
-                res.send( 401, 'Incorrect email and/or password' );
-            }
-        });
-    },
-
-    logout: function( req, res, next ) {
-        req.session.destroy( function ( err ) {
-            res.send( { message: 'Successfully logged out' } );
-        });
     }
+
+    // login: function( req, res, next ) {
+    //     new User( { email: req.params.email } )
+    //     .fetch()
+    //     .then( function( user ) {
+    //         if ( user && user.verify( req.params.password ) ) {
+    //             req.login( user, function( err ) {
+    //                 if ( err ) return next( err );
+    //                 return res.send( { message: 'Successfully logged in' } );
+    //             });
+    //         } else {
+    //             res.send( 401, 'Incorrect email and/or password' );
+    //         }
+    //     });
+    // },
+
+    // logout: function( req, res, next ) {
+    //     req.session.destroy( function ( err ) {
+    //         res.send( { message: 'Successfully logged out' } );
+    //     });
+    // }
 };
 
 module.exports = UsersController;

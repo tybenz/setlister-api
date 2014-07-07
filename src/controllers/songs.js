@@ -3,16 +3,25 @@ var passport = require( 'passport' );
 
 var SongsController = {
     auth: function( action ) {
-        return passport.authenticate( 'basic' );
+        // return passport.authenticate( 'basic' );
+        return null;
     },
 
     index: function( req, res, next ) {
-        new Songs().fetch({
+        var group_id = req.params.group_id;
+        var options = {};
+        if ( group_id ) {
+            options.group_id = group_id;
+        }
+
+        new Songs( options ).fetch({
             withRelated: [ 'setlists', 'setlists.group' ]
         })
         .then( function( songs ) {
             res.send( songs );
         });
+
+        next();
     },
 
     show: function( req, res, next ) {

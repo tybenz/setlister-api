@@ -3,7 +3,8 @@ var passport = require( 'passport' );
 
 var SetlistsController = {
     auth: function( action ) {
-        return passport.authenticate( 'basic' );
+        // return passport.authenticate( 'basic' );
+        return null;
     },
 
     index: function( req, res, next ) {
